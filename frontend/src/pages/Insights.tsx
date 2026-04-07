@@ -14,7 +14,6 @@ import {
   Ticket,
   Users,
   Zap,
-  TrendingRight,
   Activity
 } from 'lucide-react';
 

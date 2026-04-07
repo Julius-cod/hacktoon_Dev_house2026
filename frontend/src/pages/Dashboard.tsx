@@ -157,6 +157,7 @@ const colorMap: Record<string, { bg: string; text: string; ring: string; gradien
   emerald: { bg: 'bg-emerald-50', text: 'text-emerald-600', ring: 'ring-emerald-500/20', gradient: 'from-emerald-500 to-emerald-600' },
   indigo: { bg: 'bg-indigo-50', text: 'text-indigo-600', ring: 'ring-indigo-500/20', gradient: 'from-indigo-500 to-indigo-600' },
   amber: { bg: 'bg-amber-50', text: 'text-amber-600', ring: 'ring-amber-500/20', gradient: 'from-amber-500 to-amber-600' },
+  slate: { bg: 'bg-slate-50', text: 'text-slate-600', ring: 'ring-slate-500/20', gradient: 'from-slate-500 to-slate-600' },
 };
 
 export default function Dashboard() {
