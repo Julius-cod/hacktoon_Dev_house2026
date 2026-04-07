@@ -1,5 +1,7 @@
 // Layout Component
 import { Outlet, NavLink, useLocation } from 'react-router-dom';
+import FeedbackWidget from './FeedbackWidget';
+import { useUser } from '../context/UserContext';
 import { 
   LayoutDashboard, 
   Inbox, 
@@ -39,6 +41,7 @@ const navItems = [
 
 export default function Layout() {
   const location = useLocation();
+  const { user } = useUser();
   
   const isActive = (path: string) => {
     if (path === '/') return location.pathname === '/';
@@ -47,6 +50,8 @@ export default function Layout() {
 
   return (
     <div className="min-h-screen bg-[#f8fafc] flex">
+      {/* Feedback Widget */}
+      {user && <FeedbackWidget userId={user.id} />}
       {/* Left Sidebar */}
       <aside className="w-64 bg-white border-r border-slate-200/60 fixed h-screen flex flex-col z-30">
         {/* Logo */}
